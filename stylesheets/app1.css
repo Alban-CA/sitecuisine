@@ -20,7 +20,7 @@ h1 {
     text-decoration: none;
     color: grey;
     margin-left: auto;
-    margin-left: auto;
+   
 
 }
 
@@ -34,6 +34,40 @@ padding : 0 0.5em;
 ul {
 
 list-style-type : none; 
+}
+
+
+#searchbar{
+    position: relative;
+    width:1040px;
+    height:auto;
+}
+
+.formulaire {
+    display:inline-block;
+
+}
+
+.formulaire .champ {
+    width:600px;
+    height:35px;
+}
+
+.formulaire .bouton {
+    
+
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    padding: 0; 
+}
+
+.loupe {
+
+    
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0;
 }
 
 
@@ -68,6 +102,84 @@ nav li a {
 
 }
 
+section h2 {
+    
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    margin-right: auto;
+    float: left;
+}
+
+
+p {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin-right: auto;
+}
+
+section h3 {
+
+    
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: auto;
+    float: left; 
+}
+
+div img {
+
+    display: inline-block;
+    margin-left: auto;
+    width: 25%;
+    
+
+
+}
+
+div p {
+
+    text-align: right;
+    text-decoration: none;
+    color: grey;
+    margin-right: auto;
+}
+
+section p {
+
+    width: 75%;
+    float: right;
+    text-decoration: none;
+    color: white; 
+    
+}
+
+main section {
+    overflow: auto;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+main section .image-container {
+   width: 25%;
+   float: left;
+}
+
+main section .image-container img {
+   width: 100%;
+}
+
+main section .summary {
+   width: 75%;
+   float: left;
+}
+
+main section .summary h2 {
+    margin-top: 0;
+}
 
 .logo {
     width: 200px;
@@ -84,5 +196,21 @@ nav li a {
     padding: 15px;
     background: rgba(0,0,0, 0.5);
     color: white;
+
+}
+
+.home {
+
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+
+
+}
+
+
+.searchbar {
+
 
 }
