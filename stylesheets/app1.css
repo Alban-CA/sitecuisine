@@ -208,7 +208,17 @@ main section .summary h2 {
     height: 35px;
     margin-bottom: 0;
 }
-.searchbar {
+#carrousel {
 
+    position: relative;
+    height: 400px;
+    width: 900px;
+    margin: auto;
+}
 
+#carrousel ul li {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
 }
