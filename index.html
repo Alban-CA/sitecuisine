@@ -1,97 +1,57 @@
 <!DOCTYPE>
 <html>
-
-
-
 <head>
-    <title> CUISINE POUR DEUX / recette Du Jour </title>
-        
-
+    <title> CUISINE POUR DEUX / recette Du Jour </title>       
         <meta charset="utf-8">
-
     <link rel="stylesheet" type="text/css" href="stylesheets/app1.css">
     <link rel="stylesheet" type="text/css" href="">
-
-
 </head>
+    <body background="images/macaron.jpg" class="home">      
+        <header><img src="images/toque.ico"></header>
+        <h1>Recette du jour</h1>
+        <div class="container">
+        <nav>
+            <ul id="menu horizontal">
+                <li>
+                <a href="index.html">Homepage</a>
+                </li>
+                <li>
+                 <a href="pages/recettes.html">Recettes</a>
+                </li>
+                <li>
+                    <a href="pages/materiels.html">Materiels</a>
+                </li>
+                <li>
+                    <a href="pages/recherche.html">Recherche</a>
+                </li>
+            </ul>
+        </nav>
+            <div id="searchbar">
+                <form class="formulaire">                
+                <input class="champ" type="text" value="Recherche"/>
+                <img class="loupe" src="images/loupe.jpg"/>                       
+                </form>
+            </div>
+        <main>
+    <div><h2>Recette du Jour</h2></div>
+    <footer></footer>
+        <div id="contenair">
+            <div><img src="images/artisucre.jpg"></div>
+            <div><img src="images/canard.jpg"></div>
+            <div><img src="images/asperges.jpg"></div>
+            <div><img src="images/patch3.jpg"></div>
+            <div><img src="images/taboule.jpg"></div>
+            <div><img src="images/verrines.jpg"></div>
+            <div><img src="images/patch1.jpg"></div>
+            <div><img src="images/bava_fruits.jpg"></div>
+            <div><img src="images/maca_caramel.jpg"></div>
+            <div><img src="images/tournesol.jpg"></div>
+            <div><img src="images/patch2.jpg"></div>
+        </div>  
+         
+        <button id="prev">prev</button>
+        <button id="next">next</button>
 
-
-
- 
-
-
-<body background="images/macaron.jpg" class="home">
-
-   
-    
-    <header><img src="images/toque.ico"></header>
-
-    <h1>Recette du jour</h1>
-
-
-    <div class="container">
-
-    <nav>
-        <ul id="menu horizontal">
-           
-            <li>
-            <a href="index.html">Homepage</a> 
-            </li>
-            
-            <li>
-             <a href="pages/recettes.html">Recettes</a>
-            </li>
-            
-            <li>
-                <a href="pages/materiels.html">Materiels</a>
-            </li>
-            
-            <li>
-                <a href="pages/recherche.html">Recherche</a>
-            </li>
-        
-        </ul>
-
-    </nav>
-
-    
-        <div id="searchbar">                
-
-            <form class="formulaire">
-            
-            <input class="champ" type="text" value="Recherche"/>
-            <img class="loupe" src="images/loupe.jpg"/>
-                    
-            </form>
-        </div>
-
-
-    <main>
-
-
-<div><h2>Recette du Jour</h2></div>
-  
-
-<footer></footer>
-
- <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/JScuisine.js"></script>
-    <div id="carrousel">
-        <ul>
-            <li><img src="images/moelleux.jpg"></li>
-            <li><img src="images/saumon.jpg"></li>
-            <li><img src="images/panna.jpg"></li>
-            <li><img src="images/macaron1.jpg"></li>
-            <li><img src="images/sol-meuniere.jpg"></li>
-            <li><img src="images/brulee.jpg"></li>
-        </ul>
-    </div>
-
-   
-
-    
-    <script src="jQuery/jquery-3.2.1.min.js"></script>
-    
-</body>
-    
+        <script type="text/javascript" src="js/JScuisine.js"></script>
+    </body>
 </html>

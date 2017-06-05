@@ -1,11 +1,7 @@
 
-body {
-    background: url(../images/macaron.jpg);
-  min-height: 100%;
-}
-
-
 body{
+    background: url(../images/macaron.jpg);
+    min-height: 100%;
     padding-top: 30px;
     position: center;
 }
@@ -23,25 +19,19 @@ h1 {
    }
 
  header nav ul li { 
-
-display : inline-block;
-
-padding : 0 0.5em; 
+    display : inline-block;
+    padding : 0 0.5em; 
 }
 
 ul {
-
 list-style-type : none; 
 }
-
-
-
-
 
 nav {
     padding: 0; margin: 0;
     text-align: center;
 }
+
 nav li {
     display: inline-block;
     width: 100px;
@@ -54,23 +44,20 @@ nav li {
     list-style: none; 
 }
 
-
 nav li{
     background-color: grey
 }
 
-
-
+/*agit sur l'element "a" contenu dns l'element "li" lui meme contenu dans un element nav*/
 nav li a {
     display: block;
     margin: 0px;
     text-decoration: none;
     color: black;
-
 }
 
-section h2 {
-    
+/*agit sur les elements "h2" enfants ou petits enfants d'un element "section". */
+section h2 { 
     display: block;
     text-align: right;
     text-decoration: none;
@@ -79,7 +66,7 @@ section h2 {
     float: left;
 }
 
-
+/* agit sur l'element "p" */
 p {
     text-align: left;
     text-decoration: none;
@@ -87,9 +74,7 @@ p {
     margin-right: auto;
 }
 
-section h3 {
-
-    
+section h3 {   
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -97,14 +82,10 @@ section h3 {
     float: left; 
 }
 
-div img {
-
+.image-container {
     display: inline-block;
     margin-left: auto;
     width: 25%;
-    
-
-
 }
 
 div p {
@@ -116,12 +97,10 @@ div p {
 }
 
 section p {
-
     width: 75%;
     float: right;
     text-decoration: none;
-    color: white; 
-    
+    color: white;   
 }
 
 main section {
@@ -163,7 +142,6 @@ main section .summary h2 {
     padding: 15px;
     background: rgba(0,0,0, 0.5);
     color: white;
-
 }
 
 .home {
@@ -172,19 +150,18 @@ main section .summary h2 {
     text-decoration: none;
     color: white;
     margin-left: auto;
-
-
 }
 
+/* agit sur l'element dont l'id est "searchbar" */
 #searchbar{
     position: relative;
     width:1040px;
     height:auto;
 }
 
+/* agit sur l'element dont la classe est "formulaire" */
 .formulaire {
     display:inline-block;
-
 }
 
 .formulaire .champ {
@@ -193,32 +170,31 @@ main section .summary h2 {
 }
 
 .formulaire .bouton {
-    
-
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
     padding: 0; 
 }
 
-.loupe {
-
-    
+.loupe { 
     width: 35px;
     height: 35px;
     margin-bottom: 0;
 }
-#carrousel {
 
-    position: relative;
-    height: 400px;
-    width: 900px;
-    margin: auto;
+#contenair {
+    border: solid 1px rgb(0,0,0);
 }
 
-#carrousel ul li {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
+#contenair div{
+    width: 450px;
+    height: 320px;
+    border: solid 2px black;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+#contenair div img{
+    max-width: 450px;
+    max-height: 320px;
 }

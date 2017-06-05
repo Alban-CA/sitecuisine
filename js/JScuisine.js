@@ -1,67 +1,57 @@
-    function maBoucle(){
-        setTimeout(function()){
-            alert("Bonjour!");
+    /*var button  = document.querySelector("button");
+    var on_button_click = function()
+    {
+        alert("hum i like it");
+    };
+    
+    button.onclick = on_button_click;*/
 
-            maBoucle();
-        }, 1000);
+    var button_prev = document.querySelector("#prev");
 
-    }
-    maBoucle();
+    var button_next = document.querySelector("#next");
 
-    $(document).ready(function()){
+    var boxes = document.querySelectorAll("#contenair div");
 
-    }
+    /*pour connaitre le nombre d'eleemnt dans une liste*/
+    console.log ("la taille de ma liste est:",boxes.length);
 
-    var $carrousel = $(#carrousel);
-    $img = (#carrousel img);
-    indexImg = $img.length - 1;
-        i = 0;
+    var selected = 0;
 
-
-    $currentImg = $img.eq(i);
-
-    $img.css("display","none");
-    $currentImg.css("display","block");
-
-    $carrousel.append("<div class = "controls"><span class="prev">Precedent</span><span class="next">Suivant</span></div>");
-    $(".next").click(function(){
-        i++;
-        if(i<=indexImg){
-            $img.css("display","none");
-            $currentImg = $img.eq(i);
-            $currentImg.css("display","block");
+    var refresh_display = function(){
+        for (var i = 0 ; i < boxes.length; i++) {
+            /*si i égale à selected on affiche l'element
+            sinon on le cache*/
+            if (selected == i) {
+                /*console.log("l'element "+i+" est selectionne.");*/
+                boxes[i].style.display="";
+            }else{
+                /*console.log("l'element "+i+" n'est pas selectionne.");*/
+                boxes[i].style.display="none";
+            }
         }
-        else{ 
-                i=indexImg;
-            }
-    });
+    };
 
-    $(".prev").click(function(){
-        i--;
-        if(i>=0){
-            $img.css("display","none");
-            $currentImg = $img.eq(i);
-            $currentImg.css("display","block");
+    var on_prev_click = function()
+    {
+        selected--;
+        if(selected == -1) {
+            selected = boxes.length -1;
         }
-        else{
-                i=0
-            }
-    });
+        refresh_display();
+    };
+    var  on_next_click= function()
+    {
+        selected++;
+        if (selected == boxes.length){
+            selected = 0;
+        }
+        refresh_display();
+    };
 
-    function slideImg(){
-        setTimeout(function(){
-            if (i<indexImg) {
-                i++
-            }
-            else{
-                i=0
-                }
-            $img.css("display","none");
-            $currentImg = $img.ep(i);
-            $currentImg.css("display","block");
-            slideImg();     
-        }, 7000);
-    }
+    button_prev.addEventListener("click",on_prev_click);
+    button_next.addEventListener("click",on_next_click);
 
-    SlideImg();
+
+
+    refresh_display();
     
